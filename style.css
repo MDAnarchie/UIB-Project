@@ -10,20 +10,27 @@
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
+body {
+  background-color: #fffdea;
+}
+
+/* Header Styling */
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   border-bottom: 1px solid #333;
-  color: black;
+  color: #fff;
   position: sticky;
   top: 0;
-  background-color: #fff;
+  background-color: #333;
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 2.4rem;
+  font-family: "Beau Rivage";
 }
 
 .menu ul {
@@ -37,11 +44,11 @@
 
 .menu a {
   text-decoration: none;
-  color: black;
+  color: #fff;
 }
 
 .menu a:hover {
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #fff;
   padding-bottom: 26px;
 }
 
@@ -80,16 +87,17 @@
   border: none;
   background-color: transparent;
   position: relative;
-  font-weight: bold;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
-.btn2:hover > .icon {
+.btn2:hover {
   transform: scale(1.2);
   cursor: pointer;
   transition: 0.2s linear;
 }
 
-.btn2:focus > .icon {
+.btn2:focus {
   fill: #fd1853;
   animation: grosseur 0.2s linear;
 }
@@ -134,12 +142,6 @@
   font-weight: 300;
   text-align: center;
 }
-
-/* .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
 
 .latest {
   display: grid;
