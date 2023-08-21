@@ -15,8 +15,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #bed67d;
+  border-bottom: 1px solid #333;
   color: black;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
 }
 
 .logo {
@@ -37,10 +40,17 @@
   color: black;
 }
 
+.menu a:hover {
+  border-bottom: 3px solid black;
+  padding-bottom: 26px;
+}
+
+/* Button Styling */
+
 .btn1 {
   display: inline-block;
   padding: 0.5em 1.7em;
-  margin: 1em 0.1em 0.1em 0;
+  margin: 2em 0.1em 0.1em 0;
   border: 0.16em solid rgb(15, 15, 15);
   border-radius: 2em;
   box-sizing: border-box;
@@ -57,32 +67,79 @@
   background-color: rgb(0, 0, 0);
 }
 
+.btn2-container {
+  display: inline-block;
+  margin-left: 300px;
+}
+
+.btn2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  font-weight: bold;
+}
+
+.btn2:hover > .icon {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.btn2:focus > .icon {
+  fill: #fd1853;
+  animation: grosseur 0.2s linear;
+}
+
+/* Hero Styling */
+
 .main {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 10px;
-  padding: 20px;
+  padding: 50px 50px 100px;
   margin: 0 200px 50px;
+  border-bottom: 1px solid #333;
 }
 
 .main h2 {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  text-align: center;
-  font-size: 2rem;
-  line-height: 1;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+  text-align: left;
+  font-size: 3rem;
+  line-height: 0.9;
+}
+
+.main p {
+  font-size: 1.1rem;
+}
+
+.first-letter {
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: "Beau Rivage";
 }
 
 .image-main img {
-  max-width: 100%;
+  margin-top: 1rem;
   height: auto;
+  margin-right: 20px;
 }
 
-.content {
+.related-posts {
+  margin: 100px 200px 50px;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
 .latest {
   display: grid;
@@ -155,4 +212,18 @@
   padding: 10px;
   background-color: #333;
   color: white;
+}
+
+@keyframes grosseur {
+  0% {
+    width: 50px;
+    height: 50px;
+    fill: #fd1853;
+  }
+
+  100% {
+    width: 30px;
+    height: 30px;
+    fill: #fd1853;
+  }
 }
