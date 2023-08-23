@@ -186,13 +186,6 @@ body {
   color: #fff;
 }
 
-.description {
-  line-height: 1.5rem;
-  font-size: 1rem;
-  margin-top: 1rem;
-  color: rgb(209 213 219);
-}
-
 .form div {
   display: flex;
   max-width: 28rem;
@@ -221,15 +214,21 @@ body {
 }
 
 .form div button {
-  color: #fff;
+  color: #000000;
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 1.25rem;
   padding: 0.625rem 0.875rem;
-  background-color: rgb(0, 0, 0);
+  background-color: #d5d6a4;
   border-radius: 0.375rem;
   border: none;
   outline: none;
+}
+
+.form div button:hover {
+  background-color: #000000;
+  transition: 0.5s ease-in-out;
+  color: #fff;
 }
 
 /* Buttons */
