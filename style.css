@@ -171,6 +171,24 @@ body {
   padding: 10px;
   background-color: #333;
   color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 4px;
+  height: 200px;
+}
+
+.div1 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.div2 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.div3 {
+  grid-area: 1 / 3 / 2 / 4;
 }
 
 .form {
@@ -235,6 +253,13 @@ body {
   background-color: #000000;
   transition: 0.5s ease-in-out;
   color: #fff;
+}
+
+/* Social Links */
+
+.card {
+  display: grid;
+  justify-content: center;
 }
 
 /* Buttons */
