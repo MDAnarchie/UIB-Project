@@ -247,6 +247,36 @@ body {
   color: #fff;
 }
 
+/* Social Links */
+
+i {
+  margin: 20px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+i:hover {
+  transform: scale(2);
+  transition: 0.8s ease;
+}
+
+.facebook i:hover {
+  color: #4267b2;
+}
+
+.instagram i:hover {
+  color: #833ab4;
+}
+
+.youtube i:hover {
+  color: #ff0000;
+}
+
+i:visited,
+i:active {
+  color: inherit;
+}
+
 /* Buttons */
 
 .scroll-button1 {
