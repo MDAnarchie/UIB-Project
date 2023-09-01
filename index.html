@@ -31,6 +31,28 @@
       </nav>
     </header>
     <section class="introduction">
+      <video autoplay muted loop>
+        <source
+          src="./assets/_import_609136f45479c8.87278863_FPpreview.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      <div id="home-content">
+        <h1>
+          <span id="top_text">Andrei</span>
+                </h1>
+        <p id="statement">
+          Hello there! I'm a passionate web development student with a flair for
+          all things tech and creative. When I'm not immersed in coding, you'll
+          find me exploring the captivating realms of video games, pop culture,
+          and music. But my interests don't stop there – I have a knack for
+          uncovering historical gems and sharing fun trivia. Beyond the screen,
+          I'm an avid traveler, seeking inspiration from different corners of
+          the world. Join me on this exciting adventure!
+        </p>
+        </div>
+
       <div class="about-me">
         <h1>Andrei</h1>
         <p>
@@ -41,19 +63,15 @@
           uncovering historical gems and sharing fun trivia. Beyond the screen,
           I'm an avid traveler, seeking inspiration from different corners of
           the world. Join me on this exciting adventure!
-        </p>
+        </p> <br/>
       </div>
-      <video controls width="700">
-        <source
-          src="./assets/_import_609136f45479c8.87278863_FPpreview.mp4"
-          type="video/mp4"
-        />
-      </video>
+      
     </section>
-    <h2 class="related-posts">Latest Culture Post</h2>
+
+    <h2 id="firsth2" class="related-posts">Latest Culture Post</h2>
     <main class="main">
       <div class="image-main">
-        <img src="./assets/Castelul_Bran2.jpg" alt="" width="800px" />
+        <img src="./assets/Castelul_Bran2.jpg" alt=""  />
       </div>
       <div class="article">
         <h2>
@@ -72,7 +90,10 @@
           shedding light on its rich historical tapestry and unraveling the
           truths and fictions that have contributed to its enduring allure.
         </p>
-        <a href="./article.html" class="btn1">Read More!</a>
+        <div class="main-buttons">
+          <div>
+          <a href="./article.html" class="btn1">Read More!</a>
+        </div>
         <div class="btn2-container">
           <button class="btn2">
             Like
@@ -88,6 +109,7 @@
               ></path>
             </svg>
           </button>
+        </div>
         </div>
       </div>
     </main>
@@ -178,7 +200,10 @@
           pop culture and history. ChatGPT's ability to maintain context over
           extended dialogues has revolutionized how we interact with AI.
         </p>
-        <a href="./article.html" class="btn1">Read More!</a>
+        <div class="main-buttons">
+          <div>
+          <a href="./article.html" class="btn1">Read More!</a>
+        </div>
         <div class="btn2-container">
           <button class="btn2">
             Like
@@ -194,6 +219,7 @@
               ></path>
             </svg>
           </button>
+        </div>
         </div>
       </div>
       <div class="image-main">
@@ -288,14 +314,12 @@
         </p>
       </div>
     </section>
-
+<!-- 
     <button id="scrollToTop" class="scroll-button1">Back to Top</button>
-    <button id="scrollToBottom" class="scroll-button2">Go to Bottom</button>
+    <button id="scrollToBottom" class="scroll-button2">Go to Bottom</button> -->
 
     <footer class="footer">
-      <div class="div1">
-        <p>&copy; 2023 Andrei's Blog. All rights reserved.</p>
-      </div>
+      
       <div class="div2">
         <form class="form">
           <span class="title">Subscribe to our newsletter.</span>
@@ -310,11 +334,7 @@
           </div>
         </form>
       </div>
-      <div class="div4">
-        <a href="/about">About Us</a>
-        <a href="/terms">Terms of Service</a>
-        <a href="/privacy">Privacy Policy</a>
-      </div>
+      <br/>
 
       <div class="div3">
         <p>Contact me on any of these platforms:</p>
@@ -323,6 +343,16 @@
           ><i class="fa-brands fa-instagram"></i>
         </a>
         <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <br/>
+      <div class="div4">
+        <a href="/about">About Us</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="/privacy">Privacy Policy</a>
+      </div>
+      <br/>
+      <div class="div1">
+        <p>&copy; 2023 Andrei's Blog. All rights reserved.</p>
       </div>
     </footer>
     <script src="./article.js"></script>

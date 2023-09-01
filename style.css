@@ -27,6 +27,8 @@ body {
   position: sticky;
   top: 0;
   background-color: #333;
+  width: 100vw;
+  z-index: 200;
 }
 
 .logo {
@@ -37,6 +39,7 @@ body {
 .menu ul {
   list-style: none;
   display: flex;
+  padding-right: 2rem;
 }
 
 .menu li {
@@ -50,15 +53,26 @@ body {
 
 .menu a:hover {
   border-bottom: 3px solid #fff;
-  padding-bottom: 38px;
+ padding-bottom: 38px;
 }
 
 /* Button Styling */
 
+.main-buttons {
+  display: flex;
+  align-items: center;
+  justify-items: space-between;
+  padding-top: 2rem;
+}
+.btn2-container {
+  margin-left: 10rem;
+}
+
 .btn1 {
-  display: inline-block;
+  display: flex;
+  flex-wrap: nowrap;
   padding: 0.5em 1.7em;
-  margin: 2em 0.1em 0.1em 0;
+  /* margin: 2em 0.1em 0.1em 0; */
   border: 0.16em solid rgb(15, 15, 15);
   border-radius: 2em;
   box-sizing: border-box;
@@ -77,7 +91,6 @@ body {
 
 .btn2-container {
   display: inline-block;
-  margin-left: 300px;
 }
 
 .btn2 {
@@ -106,13 +119,17 @@ body {
 /* Hero styling */
 
 .introduction {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin: 100px 200px 50px;
-  padding-bottom: 100px;
+
+  margin: 0rem 5rem;
+  padding-bottom: 10rem;
   border-bottom: 1px solid #333;
 }
+
 
 .introduction h1 {
   font-size: 3.5rem;
@@ -121,21 +138,27 @@ body {
 
 .introduction p {
   font-size: 1.5rem;
-  position: relative;
+  /* position: relative; */
 }
 
 .introduction video {
-  max-width: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 50rem;
+
+  z-index: 1;
 }
 
 /* Main Styling */
 
 .main {
+  margin-top: 50rem;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 10px;
-  padding: 50px 50px 100px;
-  margin: 0 200px 50px;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding-bottom: 5rem;
+  margin: 0 12rem;
   border-bottom: 1px solid #333;
 }
 
@@ -151,6 +174,7 @@ body {
 .main p,
 .secondary p {
   font-size: 1.1rem;
+  padding: 0, 10rem;
 }
 
 .first-letter {
@@ -161,23 +185,24 @@ body {
 
 .image-main img {
   margin-top: 1rem;
-  height: auto;
-  margin-right: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Secondary Article Styling */
 .secondary {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 10px;
-  padding: 50px 50px 100px;
-  margin: 0 200px 50px;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding-bottom: 5rem;
+  margin: 0 12rem;
   border-bottom: 1px solid #333;
 }
 /* Related Posts Styling */
 
 .related-posts {
-  margin: 100px 200px 50px;
+  padding-bottom: 1rem;
   font-weight: 300;
   text-align: center;
 }
@@ -196,6 +221,7 @@ body {
   height: 340px;
   width: 450px;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .card h3:hover {
@@ -203,20 +229,24 @@ body {
   transition: 0.3s;
   cursor: pointer;
 }
+.related-posts {
+  padding-top: 2rem;
+}
 
 /* Footer Styling */
 
 .footer {
   text-align: center;
-  padding: 10px;
+  padding: 1rem;
   background-color: #333;
   color: white;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 4px;
-  height: 200px;
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); */
+display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+
 }
 
 .div1 {
@@ -250,12 +280,11 @@ body {
   color: #929292;
 }
 
+
 .form {
   display: flex;
   flex-direction: column;
-  background: #606c88;
-  background: -webkit-linear-gradient(to right, #919bb3, #606c88);
-  background: linear-gradient(to right, #0f0f11, #d5d6a4);
+  background: #3f4249;
   padding: 20px;
   border-radius: 10px;
   max-width: 350px;
@@ -400,7 +429,10 @@ i:active {
     align-items: flex-start;
     padding: 10px;
   }
-
+  .menu a:hover {
+    border-bottom: 3px solid #fff;
+   padding-bottom: .2rem;
+  }
   .logo {
     font-size: 2rem;
     margin-bottom: 10px;
@@ -418,15 +450,9 @@ i:active {
     margin: 5px 0;
   }
 
-  .btn2-container {
-    margin-left: 0;
-  }
-
-  .introduction {
-    grid-template-columns: 1fr;
-    margin: 50px 20px;
-    padding-bottom: 50px;
-  }
+  /* .introduction {
+   display: flex ;
+  } */
 
   .introduction h1 {
     font-size: 2.5rem;
@@ -438,9 +464,25 @@ i:active {
 
   .main,
   .secondary {
-    grid-template-columns: 1fr;
-    padding: 20px;
-    margin: 0 20px;
+    /* grid-template-columns: 1fr; */
+    padding: 2rem;
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-buttons {
+    display: flex;
+    align-items: center;
+    justify-items: space-around;
+    padding-top: 2rem;
+  }
+  .btn1 {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .btn2-container {
+    margin-left: 5rem;
   }
 
   .main h2,
@@ -451,7 +493,8 @@ i:active {
 
   .image-main img {
     margin-top: 20px;
-    margin-right: 0;
+    /* margin-right: 0; */
+    width: 100%;
   }
 
   .latest {
@@ -463,12 +506,14 @@ i:active {
   .card img {
     height: auto;
     width: 100%;
+    /* object-fit: cover; */
   }
 
   .footer {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  
   }
 }
 
@@ -491,16 +536,10 @@ i:active {
     padding: 0.4em 1.5em;
   }
 
-  .btn2-container {
-    margin-left: 150px;
-  }
-
   /* Hero styling */
-  .introduction {
-    grid-template-columns: 1fr;
-    margin: 80px 100px;
-    padding-bottom: 80px;
-  }
+  /* .introduction {
+  display: flex;
+  } */
 
   .introduction h1 {
     font-size: 3rem;
@@ -536,7 +575,7 @@ i:active {
 
   /* Related Posts Styling */
   .related-posts {
-    margin: 80px 100px 40px;
+    text-align: center;
   }
 
   .latest {
@@ -583,4 +622,33 @@ i:active {
 @media (min-width: 1024px) {
   /* Adjust styles for desktop screens */
   /* You can fine-tune specific styles for desktop here */
+}
+
+
+
+
+#home-content {
+  width: 300px;
+  margin: 0;
+  position: relative;
+  top: 10rem;
+  left: 15rem;
+  color: #fff;
+  z-index: 3;
+  
+}
+/* 
+.home-content h1 {
+  width: 300px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  line-height: 1.1;
+} */
+
+#top_text {
+  font-size: 4rem;
+}
+#statement {
+  font-size: 1rem;
 }
