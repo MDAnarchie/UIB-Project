@@ -53,8 +53,6 @@ body {
   padding-bottom: 38px;
 }
 
-/* Button Styling */
-
 /* Hero Styling */
 
 .main {
@@ -167,8 +165,6 @@ body {
   flex-wrap: wrap;
   background-color: #333;
   color: white;
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr); */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -378,7 +374,6 @@ i:active {
 
   .main,
   .secondary {
-    /* grid-template-columns: 1fr; */
     padding: 2rem;
     margin: 0 2rem;
     display: flex;
@@ -407,7 +402,6 @@ i:active {
 
   .image-main img {
     margin-top: 20px;
-    /* margin-right: 0; */
     width: 100%;
   }
 
@@ -420,7 +414,6 @@ i:active {
   .card img {
     height: auto;
     width: 100%;
-    /* object-fit: cover; */
   }
 
   .footer {
@@ -557,12 +550,8 @@ i:active {
   .lil-nav {
     overflow-y: scroll;
     overflow-x: hidden;
-    /* display: none; */
   }
 }
 
-/* Media query for screens larger than 1023px (e.g., desktop) */
 @media (min-width: 1024px) {
-  /* Adjust styles for desktop screens */
-  /* You can fine-tune specific styles for desktop here */
 }

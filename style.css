@@ -72,7 +72,6 @@ body {
   display: flex;
   flex-wrap: nowrap;
   padding: 0.5em 1.7em;
-  /* margin: 2em 0.1em 0.1em 0; */
   border: 0.16em solid rgb(15, 15, 15);
   border-radius: 2em;
   box-sizing: border-box;
@@ -119,8 +118,6 @@ body {
 /* Hero styling */
 
 .introduction {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -246,8 +243,6 @@ body {
   flex-wrap: wrap;
   background-color: #333;
   color: white;
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr); */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -473,10 +468,6 @@ i:active {
     margin: 5px 0;
   }
 
-  /* .introduction {
-   display: flex ;
-  } */
-
   .introduction h1 {
     font-size: 2.5rem;
   }
@@ -487,7 +478,6 @@ i:active {
 
   .main,
   .secondary {
-    /* grid-template-columns: 1fr; */
     padding: 2rem;
     margin: 0 2rem;
     display: flex;
@@ -516,7 +506,6 @@ i:active {
 
   .image-main img {
     margin-top: 20px;
-    /* margin-right: 0; */
     width: 100%;
   }
 
@@ -529,7 +518,6 @@ i:active {
   .card img {
     height: auto;
     width: 100%;
-    /* object-fit: cover; */
   }
 
   .footer {
@@ -568,11 +556,6 @@ i:active {
   .btn1 {
     padding: 0.4em 1.5em;
   }
-
-  /* Hero styling */
-  /* .introduction {
-  display: flex;
-  } */
 
   .introduction h1 {
     font-size: 3rem;
@@ -663,8 +646,7 @@ i:active {
   }
 }
 
-/* Media query for screens larger than 1023px (e.g., desktop) */
+
 @media (min-width: 1024px) {
-  /* Adjust styles for desktop screens */
-  /* You can fine-tune specific styles for desktop here */
+
 }
