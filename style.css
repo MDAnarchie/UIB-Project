@@ -53,7 +53,7 @@ body {
 
 .menu a:hover {
   border-bottom: 3px solid #fff;
- padding-bottom: 38px;
+  padding-bottom: 38px;
 }
 
 /* Button Styling */
@@ -126,10 +126,9 @@ body {
   align-items: center;
 
   margin: 0rem 5rem;
-  padding-bottom: 10rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid #333;
 }
-
 
 .introduction h1 {
   font-size: 3.5rem;
@@ -138,8 +137,13 @@ body {
 
 .introduction p {
   font-size: 1.5rem;
-  /* position: relative; */
 }
+
+.about-me {
+  margin-top: 38rem;
+}
+
+/* position: relative; */
 
 .introduction video {
   object-fit: cover;
@@ -238,15 +242,15 @@ body {
 .footer {
   text-align: center;
   padding: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
   background-color: #333;
   color: white;
   /* display: grid;
   grid-template-columns: repeat(4, 1fr); */
-display: flex;
+  display: flex;
   justify-content: space-around;
   align-items: center;
-  
-
 }
 
 .div1 {
@@ -263,6 +267,7 @@ display: flex;
 
 .div4 {
   grid-area: 1 / 4 / 2 / 4;
+  gap: 1.7rem;
 }
 
 .div4 {
@@ -279,7 +284,6 @@ display: flex;
 .div4 a:hover {
   color: #929292;
 }
-
 
 .form {
   display: flex;
@@ -421,6 +425,25 @@ i:active {
   }
 }
 
+/* hero text */
+
+#home-content {
+  width: 300px;
+  margin: 0;
+  position: relative;
+  top: 10rem;
+  left: 20rem;
+  color: #fff;
+  z-index: 3;
+}
+
+#top_text {
+  font-size: 4rem;
+}
+#statement {
+  font-size: 1rem;
+}
+
 /* Media Queries */
 
 @media (max-width: 767px) {
@@ -431,7 +454,7 @@ i:active {
   }
   .menu a:hover {
     border-bottom: 3px solid #fff;
-   padding-bottom: .2rem;
+    padding-bottom: 0.2rem;
   }
   .logo {
     font-size: 2rem;
@@ -513,7 +536,17 @@ i:active {
     text-align: center;
     display: flex;
     flex-direction: column;
-  
+  }
+  /* hero section */
+
+  #home-content {
+    width: 300px;
+    margin: 0;
+    position: relative;
+    top: 10rem;
+    left: 1rem;
+    color: #fff;
+    z-index: 3;
   }
 }
 
@@ -616,39 +649,22 @@ i:active {
     margin: 15px;
     font-size: 1.3rem;
   }
+
+  /* hero section */
+
+  #home-content {
+    width: 300px;
+    margin: 0;
+    position: relative;
+    top: 10rem;
+    left: 12rem;
+    color: #fff;
+    z-index: 3;
+  }
 }
 
 /* Media query for screens larger than 1023px (e.g., desktop) */
 @media (min-width: 1024px) {
   /* Adjust styles for desktop screens */
   /* You can fine-tune specific styles for desktop here */
-}
-
-
-
-
-#home-content {
-  width: 300px;
-  margin: 0;
-  position: relative;
-  top: 10rem;
-  left: 15rem;
-  color: #fff;
-  z-index: 3;
-  
-}
-/* 
-.home-content h1 {
-  width: 300px;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 4rem;
-  line-height: 1.1;
-} */
-
-#top_text {
-  font-size: 4rem;
-}
-#statement {
-  font-size: 1rem;
 }
