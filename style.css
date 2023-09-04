@@ -140,6 +140,11 @@ body {
   margin-top: 38rem;
 }
 
+#top_text {
+  font-size: 3rem;
+  font-family: "Beau Rivage", Arial, Helvetica, sans-serif;
+}
+
 /* position: relative; */
 
 .introduction video {
@@ -147,7 +152,6 @@ body {
   position: absolute;
   width: 100%;
   height: 50rem;
-
   z-index: 1;
 }
 
@@ -296,6 +300,8 @@ body {
   letter-spacing: -0.025em;
   color: #fff;
 }
+
+/* Form Styling */
 
 .form div {
   display: flex;
@@ -646,7 +652,5 @@ i:active {
   }
 }
 
-
 @media (min-width: 1024px) {
-
 }
