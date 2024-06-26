@@ -41,6 +41,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [marasoiu.a@gmail.com](mailto:your-email@example.com)
+Marasoiu Andrei - [marasoiu.a@gmail.com](mailto:your-email@example.com)
 
 
